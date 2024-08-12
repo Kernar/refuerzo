@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-propiedades',
+  standalone: true,
+  imports: [],
+  templateUrl: './propiedades.component.html',
+  styleUrl: './propiedades.component.css'
+})
+export class PropiedadesComponent {
+
+  estaDesabilitado = false;
+  esEditable = false;
+  mensaje = "";
+
+  over(){
+    alert("mouse over");
+  }
+
+  mousedown(){
+    this.mensaje = "mouse presionar";
+  }
+}
